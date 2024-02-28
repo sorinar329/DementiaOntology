@@ -1,0 +1,2202 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia/"
+     xml:base="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:dementia-ontology="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareAgent">
+        <rdfs:label xml:lang="de">hasCareAgent</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care-Knowledge"/>
+        <rdfs:label xml:lang="de">hasCareMethod</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:label xml:lang="de">hasCareNeeds</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareResult -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareResult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:label xml:lang="de">hasCareResult</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareTopic -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareTopic">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:range rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:label xml:lang="de">hasCareTopic</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasDiagnosis -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasDiagnosis">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="de">hasDiagnosis</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasPatient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasPatient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient"/>
+        <rdfs:label xml:lang="en">hasPatient</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasSymptom">
+        <rdfs:label xml:lang="de">hasSymptom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasTreatment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasTreatment">
+        <rdfs:label xml:lang="de">hasTreatment</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task -->
+
+    <owl:Class rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task">
+        <rdfs:label xml:lang="de">Task</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alternative_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alternative_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Alternative_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medication-Based_Treatments"/>
+        <rdfs:comment>Medikamentöse Behandlung:
+
+Bei Depressionen, die oft mit Demenz einhergehen können.</rdfs:comment>
+        <rdfs:label xml:lang="en">Antidepressants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Aromatherapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Aromatherapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sensory_Therapies"/>
+        <rdfs:comment>Sinnesbezogene Therapien:
+
+Aromatherapie: Verwendung von Düften, um Erinnerungen hervorzurufen oder Entspannung zu bieten.</rdfs:comment>
+        <rdfs:label xml:lang="en">Aromatherapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Art_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Art_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alternative_Therapies"/>
+        <rdfs:comment>Alternative Therapien:
+
+Kunsttherapie: Kreative Ausdrucksformen zur Verbesserung der Lebensqualität.</rdfs:comment>
+        <rdfs:label xml:lang="en">Art_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Therapies"/>
+        <rdfs:comment>Kognitive Therapie:
+
+Verhaltenstherapie: Zur Bewältigung von Verhaltensproblemen, die bei Demenz auftreten können.</rdfs:comment>
+        <rdfs:label xml:lang="en">Behavioral_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care-Knowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care-Knowledge">
+        <rdfs:label xml:lang="en">Care-Knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Agent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Person"/>
+        <rdfs:label xml:lang="en">Care_Agent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care-Knowledge"/>
+        <rdfs:label xml:lang="en">Care_Method</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lifestyle_Environmental_Interventions"/>
+        <rdfs:comment>Lebensstil- und Umweltinterventionen:
+
+Angehörigenberatung: Unterstützung und Schulung für Pflegepersonen und Angehörige.</rdfs:comment>
+        <rdfs:label xml:lang="en">Caregiver_Counseling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medication-Based_Treatments"/>
+        <rdfs:comment>Medikamentöse Behandlung: 
+
+Zur Behandlung von Symptomen bei Alzheimer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cholinesterase Inhibitors</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Apps -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Apps">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Technology-Based_Interventions"/>
+        <rdfs:comment>Technologiebasierte Interventionen:
+
+Kognitive Apps: Apps, die entwickelt wurden, um kognitive Funktionen zu stimulieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cognitive_Apps</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Cognitive_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Therapies"/>
+        <rdfs:comment>Kognitive Therapie:
+
+Um die kognitiven Fähigkeiten zu stärken und zu erhalten.</rdfs:comment>
+        <rdfs:label xml:lang="en">Cognitive_Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lifestyle_Environmental_Interventions"/>
+        <rdfs:comment>Lebensstil- und Umweltinterventionen:
+
+Demenzfreundliche Umgebung: Schaffung einer sicheren und unterstützenden Umgebung.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dementia-Friendly_Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Person"/>
+        <rdfs:label xml:lang="en">Dementia_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Support-Groups_Counseling"/>
+        <rdfs:comment>Unterstützungsgruppen und Beratung:
+
+Demenz-Selbsthilfegruppen: Für Patienten und Betreuer.</rdfs:comment>
+        <rdfs:label xml:lang="en">Dementia_Support_Groups</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Frühstadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Frühstadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient"/>
+        <rdfs:comment>Demenz Frühstadium - Reisberg-Stadium 2-3</rdfs:comment>
+        <rdfs:label xml:lang="en">Demenz_Frühstadium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Mittleres_Stadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Mittleres_Stadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient"/>
+        <rdfs:comment>Demenz Mittleres Stadium - Reisberg-Stadium 4-5</rdfs:comment>
+        <rdfs:label xml:lang="de">Demenz_Mittleres_Stadium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Spätstadium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Spätstadium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient"/>
+        <rdfs:comment>Demenz Spätstadium - Reisberg-Stadium 6-7</rdfs:comment>
+        <rdfs:label xml:lang="de">Demenz_Spätstadium</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medical_Knowledge"/>
+        <rdfs:label xml:lang="en">Disease</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Support-Groups_Counseling"/>
+        <rdfs:comment>Unterstützungsgruppen und Beratung:
+
+Individuelle Beratung: Emotionale Unterstützung für Personen, die mit Demenz umgehen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Individual_Counseling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:label xml:lang="en">Informational_Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Keine_Demenz -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Keine_Demenz">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Patient"/>
+        <rdfs:label xml:lang="en">Keine Demenz - Reisberg-Stadium 1</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lifestyle_Environmental_Interventions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lifestyle_Environmental_Interventions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Lifestyle_Environmental_Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medical_Knowledge -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medical_Knowledge">
+        <rdfs:label xml:lang="en">Medical_Knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medication-Based_Treatments -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medication-Based_Treatments">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Medication-Based_Treatments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Melatonin_Supplements -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Melatonin_Supplements">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Management"/>
+        <rdfs:comment>Schlafmanagement:
+
+Melatonin-Supplemente: Werden manchmal verwendet, um den Schlaf-Wach-Rhythmus zu regulieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Melatonin_Supplements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medication-Based_Treatments"/>
+        <rdfs:comment>Medikamentöse Behandlung:
+
+Ein Medikament, das bei mittelschwerer bis schwerer Alzheimer-Krankheit eingesetzt wird.</rdfs:comment>
+        <rdfs:label xml:lang="en">Memantine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alternative_Therapies"/>
+        <rdfs:comment>Alternative Therapien.
+
+Musiktherapie: Zur Förderung emotionaler Wohlbefinden und Kommunikation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Music_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Non-Pharmacological_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Non-Pharmacological_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Non-Pharmacological_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Nutritional_Interventions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Nutritional_Interventions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Nutritional_Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Occupational_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Occupational_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Occupational_Therapies"/>
+        <rdfs:comment>Physiotherapie und Ergotherapie:
+
+Ergotherapie: Zur Förderung der Selbstständigkeit im täglichen Leben.</rdfs:comment>
+        <rdfs:label xml:lang="en">Occupational_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Person">
+        <rdfs:label xml:lang="en">Person</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Occupational_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Occupational_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Physical_Occupational_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:label xml:lang="en">Physical_Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Occupational_Therapies"/>
+        <rdfs:comment>Physiotherapie und Ergotherapie:
+
+Physiotherapie: Um die Mobilität und Muskelkraft zu erhalten.</rdfs:comment>
+        <rdfs:label xml:lang="en">Physical_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Psychological_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Psychological_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Care_Method"/>
+        <rdfs:label xml:lang="en">Psychological_Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reality_Orientation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reality_Orientation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Non-Pharmacological_Therapies"/>
+        <rdfs:comment>Nicht-medikamentöse Therapie:
+
+Realitätsorientierung: Eine in der frühen Alzheimer-Diagnose eingesetzte Therapieform, die dem Patienten hilft, sich besser in der Umgebung zu orientieren.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reality_Orientation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Recreational_Therapies"/>
+        <rdfs:comment>Soziale und Freizeittherapien:
+
+Freizeitaktivitäten: Freizeitbeschäftigungen zur Freude und Stimulation.</rdfs:comment>
+        <rdfs:label xml:lang="en">Recreational_Activities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Non-Pharmacological_Therapies"/>
+        <rdfs:comment>Nicht-medikamentöse Therapie:
+
+Erinnerungstherapie: Fördert positive Erinnerungen und Gespräche über die Vergangenheit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Reminiscence_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sensory_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sensory_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Sensory_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Medical_Knowledge"/>
+        <rdfs:label xml:lang="en">SignAndSymptom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Hygiene_Practices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Hygiene_Practices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Management"/>
+        <rdfs:comment>Schlafmanagement:
+
+Schlafhygienepraktiken: Etablierung einer Routine für besseren Schlaf.</rdfs:comment>
+        <rdfs:label xml:lang="en">Sleep_Hygiene_Practices</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Management -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Management">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Sleep_Management</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Recreational_Therapies"/>
+        <rdfs:comment>Soziale und Freizeittherapien:
+
+Programme zur sozialen Teilhabe: Aktivitäten zur Förderung sozialer Interaktion.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social_Engagement_Programs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Recreational_Therapies -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Recreational_Therapies">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Social_Recreational_Therapies</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Special_Diets -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Special_Diets">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Nutritional_Interventions"/>
+        <rdfs:comment>Ernährungsinterventionen:
+
+Spezielle Diäten: Maßgeschneiderte Ernährungspläne, um ernährungsphysiologische Bedürfnisse zu erfüllen und die Gehirngesundheit zu unterstützen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Special_Diets</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SignAndSymptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_1_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_1_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Keine_Demenz"/>
+        <rdfs:label xml:lang="en">Stadium_1_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_2_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_2_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Frühstadium"/>
+        <rdfs:label xml:lang="en">Stadium_2_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Frühstadium"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AidDressing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistHouseholdTasks"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EncourageInteraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EnsureSkinCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-FacilitateOutdoorActivities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpWithScheduling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-PromoteSafety"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideStimulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportEating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportVisionAndHearing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Stadium_3_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_4_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_4_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Stadium_4_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Mittleres_Stadium"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Psychological_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistBathing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistMobility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistWithFinances"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpToileting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManagePain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-MonitorHealth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-OfferPalliativeCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideTransportation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideWoundCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-TakeMedicine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Stadium_5_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Spätstadium"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareMethod"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Psychological_Support"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AidDressing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistBathing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistHouseholdTasks"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistMobility"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistWithFinances"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EncourageInteraction"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EnsureSkinCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-FacilitateOutdoorActivities"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpToileting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpWithScheduling"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManagePain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-MonitorHealth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-OfferPalliativeCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-PromoteSafety"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideStimulation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideTransportation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideWoundCare"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportEating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportVisionAndHearing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#hasCareNeeds"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-TakeMedicine"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Stadium_6_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_7_Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_7_Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Demenz_Spätstadium"/>
+        <rdfs:label xml:lang="en">Stadium_7_Patient</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Support-Groups_Counseling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Support-Groups_Counseling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Support-Groups_Counseling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AidDressing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AidDressing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-AidDressing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistBathing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistBathing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-AssistBathing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistHouseholdTasks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistHouseholdTasks">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-AssistHouseholdTasks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistMobility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistMobility">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-AssistMobility</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistWithFinances -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistWithFinances">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-AssistWithFinances</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EncourageInteraction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EncourageInteraction">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+        <rdfs:label xml:lang="en">Task-EncourageInteraction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EnsureSkinCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EnsureSkinCare">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+        <rdfs:label xml:lang="en">Task-EnsureSkinCare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-FacilitateOutdoorActivities -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-FacilitateOutdoorActivities">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-FacilitateOutdoorActivities</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpToileting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpToileting">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-HelpToileting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpWithScheduling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpWithScheduling">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Informational_Support"/>
+        <rdfs:label xml:lang="en">Task-HelpWithScheduling</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManagePain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManagePain">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-ManagePain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-ManageSleep</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-MonitorHealth -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-MonitorHealth">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-MonitorHealth</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-OfferPalliativeCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-OfferPalliativeCare">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-OfferPalliativeCare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-PromoteSafety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-PromoteSafety">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-PromoteSafety</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideStimulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideStimulation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-ProvideStimulation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideTransportation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideTransportation">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-ProvideTransportation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideWoundCare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideWoundCare">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-ProvideWoundCare</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportEating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportEating">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-SupportEating</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportVisionAndHearing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportVisionAndHearing">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-SupportVisionAndHearing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-TakeMedicine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-TakeMedicine">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Task"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Support"/>
+        <rdfs:label xml:lang="en">Task-TakeMedicine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Technology-Based_Interventions -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Technology-Based_Interventions">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment"/>
+        <rdfs:label xml:lang="en">Technology-Based_Interventions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sensory_Therapies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Treatment">
+        <rdfs:label xml:lang="en">Treatment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Non-Pharmacological_Therapies"/>
+        <rdfs:comment>Nicht-medikamentöse Therapie:
+
+Validierungstherapie: Ein Ansatz, der die Gefühle und Realität des Patienten akzeptiert und respektiert.</rdfs:comment>
+        <rdfs:label xml:lang="en">Validation_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Technology-Based_Interventions"/>
+        <rdfs:comment>Technologiebasierte Interventionen:
+
+Virtual-Reality-Therapie: Eintauchen in Erfahrungen zur Förderung kognitiver und emotionaler Gesundheit.</rdfs:comment>
+        <rdfs:label xml:lang="en">Virtual-Reality_Therapy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease"/>
+        <dementia-ontology:hasDiagnosis rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient_Frühstadium"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Antidepressants_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Aromatherapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Aromatherapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Aromatherapy"/>
+        <rdfs:label xml:lang="en">Aromatherapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Art_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Art_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Art_Therapy"/>
+        <rdfs:label xml:lang="en">Art_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithBathing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithBathing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistBathing"/>
+        <rdfs:label xml:lang="de">AssistWithBathing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithMedication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithMedication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-TakeMedicine"/>
+        <rdfs:label xml:lang="de">AssistWithMedication</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithMobility -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithMobility">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistMobility"/>
+        <rdfs:label xml:lang="de">AssistWithMobility</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithToileting -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#AssistWithToileting">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpToileting"/>
+        <rdfs:label xml:lang="de">AssistWithToileting</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient_Frühstadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Behavioral_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient_Frühstadium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Caregiver_Counseling_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Cholinesterase_Inhibitors_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Apps_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Apps_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Apps"/>
+        <rdfs:label xml:lang="en">Cognitive_Apps_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Training_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Training_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cognitive_Training"/>
+        <rdfs:label xml:lang="en">Cognitive_Training_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Dementia-Friendly_Environment_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Dementia_Support_Groups_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#EncourageSocialInteraction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#EncourageSocialInteraction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EncourageInteraction"/>
+        <rdfs:label xml:lang="de">EncourageSocialInteraction</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#EnsureSkinCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#EnsureSkinCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-EnsureSkinCare"/>
+        <rdfs:label xml:lang="de">EnsureSkinCare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#FacilitateOutdoorActivities -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#FacilitateOutdoorActivities">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-FacilitateOutdoorActivities"/>
+        <rdfs:label xml:lang="de">FacilitateOutdoorActivities</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithFinances -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithFinances">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistWithFinances"/>
+        <rdfs:label xml:lang="de">HelpWithFinances</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithHouseholdTasks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithHouseholdTasks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AssistHouseholdTasks"/>
+        <rdfs:label xml:lang="de">HelpWithHouseholdTasks</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithScheduling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HelpWithScheduling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-HelpWithScheduling"/>
+        <rdfs:label xml:lang="de">HelpWithScheduling</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Individual_Counseling_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ManagePain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ManagePain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManagePain"/>
+        <rdfs:label xml:lang="de">ManagePain</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ManageSleep -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ManageSleep">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ManageSleep"/>
+        <rdfs:label xml:lang="de">ManageSleep</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Melatonin_Supplements_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Melatonin_Supplements_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Melatonin_Supplements"/>
+        <rdfs:label xml:lang="en">Melatonin_Supplements_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Memantine_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#MonitorHealth -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#MonitorHealth">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-MonitorHealth"/>
+        <rdfs:label xml:lang="de">MonitorHealth</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Music_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Occupational_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Occupational_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Occupational_Therapy"/>
+        <rdfs:label xml:lang="en">Occupational_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Physical_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#PromoteSafety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#PromoteSafety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-PromoteSafety"/>
+        <rdfs:label xml:lang="de">PromoteSafety</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvidePalliativeCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvidePalliativeCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-OfferPalliativeCare"/>
+        <rdfs:label xml:lang="de">ProvidePalliativeCare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideStimulation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideStimulation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideStimulation"/>
+        <rdfs:label xml:lang="de">ProvideStimulation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideTransportation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideTransportation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideTransportation"/>
+        <rdfs:label xml:lang="de">ProvideTransportation</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideWoundCare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#ProvideWoundCare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-ProvideWoundCare"/>
+        <rdfs:label xml:lang="de">ProvideWoundCare</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reality_Orientation_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reality_Orientation_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reality_Orientation"/>
+        <rdfs:label xml:lang="en">Reality_Orientation_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Recreational_Activities_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#RemindToDress -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#RemindToDress">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-AidDressing"/>
+        <rdfs:label xml:lang="de">RemindToDress</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Reminiscence_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Hygiene_Practices_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Hygiene_Practices_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Sleep_Hygiene_Practices"/>
+        <rdfs:label xml:lang="en">Sleep_Hygiene_Practices_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Social_Engagement_Programs_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Special_Diets_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Special_Diets_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Special_Diets"/>
+        <rdfs:label xml:lang="en">Special_Diets_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient_Frühstadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient_Frühstadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_3_Patient"/>
+        <dementia-ontology:hasCareAgent rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium"/>
+        <dementia-ontology:hasDiagnosis rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy_1"/>
+        <rdfs:label xml:lang="en">Stadium_3_Patient</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient"/>
+        <dementia-ontology:hasCareAgent rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium"/>
+        <dementia-ontology:hasDiagnosis rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Antidepressants_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Therapy_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Music_Therapy_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Recreational_Activities_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Reminiscence_Therapy_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Engagement_Programs_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy_1"/>
+        <rdfs:label xml:lang="en">Stadium_5_Patient_Mittleres_Stadium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient"/>
+        <dementia-ontology:hasCareAgent rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium"/>
+        <dementia-ontology:hasDiagnosis rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia"/>
+        <dementia-ontology:hasDiagnosis rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues"/>
+        <dementia-ontology:hasSymptom rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Caregiver_Counseling_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Cholinesterase_Inhibitors_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia-Friendly_Environment_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Dementia_Support_Groups_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Individual_Counseling_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memantine_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Physical_Therapy_1"/>
+        <dementia-ontology:hasTreatment rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy_1"/>
+        <rdfs:label xml:lang="en">Stadium_6_Patient_Spätstadium</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SupportEating -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SupportEating">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportEating"/>
+        <rdfs:label xml:lang="de">SupportEating</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SupportVisionAndHearing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#SupportVisionAndHearing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Task-SupportVisionAndHearing"/>
+        <rdfs:label xml:lang="de">SupportVisionAndHearing</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Validation_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_6_Patient_Spätstadium"/>
+        <rdfs:label xml:lang="en">Validation_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Virtual-Reality_Therapy"/>
+        <dementia-ontology:hasPatient rdf:resource="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Stadium_5_Patient_Mittleres_Stadium"/>
+        <rdfs:label xml:lang="en">Virtual-Reality_Therapy_1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Alzheimers_Disease">
+        <rdfs:comment>Die Alzheimer-Krankheit ist die häufigste Ursache für Demenz. Sie ist durch die Bildung von Beta-Amyloid-Plaques und abnormen Tau-Proteinen im Gehirn gekennzeichnet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Alzheimers_Disease</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Behavioral_Changes">
+        <rdfs:comment>Änderungen im Verhalten, die nicht auf äußere Umstände zurückzuführen sind.</rdfs:comment>
+        <rdfs:label xml:lang="en">Behavioral_Changes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_1_Frühstadium">
+        <rdfs:label xml:lang="en">CareAgent_1</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_2_Mittleres_Stadium">
+        <rdfs:label xml:lang="en">CareAgent_2</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#CareAgent_3_Spätstadium">
+        <rdfs:label xml:lang="en">CareAgent_3</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Creutzfeldt_Jakob_Disease">
+        <rdfs:comment>Eine seltene, degenerative, tödliche Gehirnerkrankung, die Demenz verursacht.</rdfs:comment>
+        <rdfs:label xml:lang="en">Creutzfeldt_Jakob_Disease</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Depression">
+        <rdfs:comment>Symptom, das tiefe Traurigkeit und Verlust von Interesse beinhaltet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Depression</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Disorientation">
+        <rdfs:comment>Symptom, das eine Verwirrung über Zeit, Ort und Person beinhaltet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Disorientation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Frontotemporal_Lobar_Degeneration">
+        <rdfs:comment>Eine Gruppe von Erkrankungen, die die Frontal- und Schläfenlappen des Gehirns betreffen. Sie kann zu Veränderungen in Persönlichkeit, Verhalten und Sprache führen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Frontotemporal_Lobar_Degeneration</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#HIV-Associated_Neurocognitive_Disorders">
+        <rdfs:comment>Menschen mit HIV können schwere kognitive Beeinträchtigungen entwickeln, die als &quot;HIV-assoziierte Neurokognitive Störungen&quot; bezeichnet werden.</rdfs:comment>
+        <rdfs:label xml:lang="en">HIV-Associated_Neurocognitive_Disorders</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Huntingtons_Disease">
+        <rdfs:comment>Eine genetisch bedingte Erkrankung, die zu Bewegungsstörungen und kognitiven Problemen führen kann.</rdfs:comment>
+        <rdfs:label xml:lang="en">Huntingtons_Disease</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Lewy_Body_Dementia">
+        <rdfs:comment>Wird durch abnormale Ablagerungen von Alpha-Synuclein-Proteinen im Gehirn verursacht und geht oft mit Parkinson-ähnlichen Symptomen einher.</rdfs:comment>
+        <rdfs:label xml:lang="en">Lewy_Body_Dementia</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Loss_of_Judgment">
+        <rdfs:comment>Beeinträchtigung der Fähigkeit, angemessene Entscheidungen zu treffen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Loss_of_Judgment</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Memory_Loss">
+        <rdfs:comment>Symptom, bei dem die Fähigkeit, Informationen zu behalten und abzurufen, beeinträchtigt ist.</rdfs:comment>
+        <rdfs:label xml:lang="en">Memory_Loss</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Multiple_Sclerosis">
+        <rdfs:comment>In fortgeschrittenen Stadien führt MS schubweise zu kognitiven Beeinträchtigungen, die den Alltag erheblich einschränken.</rdfs:comment>
+        <rdfs:label xml:lang="en">Multiple_Sclerosis</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Normal_Pressure_Hydrocephalus">
+        <rdfs:comment>Wird durch einen abnormalen Anstieg der Gehirnflüssigkeit gekennzeichnet und verursacht demenzielle Symptome.</rdfs:comment>
+        <rdfs:label xml:lang="en">Normal_Pressure_Hydrocephalus</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Parkinsons_Disease">
+        <rdfs:comment>Parkinson führt zu kognitiven Beeinträchtigunge und ist eng mit der Lewy-Körper-Demenz verbunden.</rdfs:comment>
+        <rdfs:label xml:lang="en">Parkinsons_Disease</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Social_Behavior_Changes">
+        <rdfs:comment>Veränderungen in der Art und Weise, wie sich eine Person in sozialen Situationen verhält.</rdfs:comment>
+        <rdfs:label xml:lang="en">Social_Behavior_Changes</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Spatial_Awareness_Issues">
+        <rdfs:comment>Schwierigkeiten bei der Wahrnehmung von Raum und räumlichen Beziehungen.</rdfs:comment>
+        <rdfs:label xml:lang="en">Spatial_Awareness_Issues</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Speech_Problems">
+        <rdfs:comment>Symptom, das eine Verwirrung über Zeit, Ort und Person beinhaltet.</rdfs:comment>
+        <rdfs:label xml:lang="en">Speech_Problems</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Therapeutic_Touch">
+        <rdfs:comment>Sinnesbezogene Therapien:
+
+Therapeutische Berührung: Sanfte Berührung für Komfort und Wohlbefinden.</rdfs:comment>
+        <rdfs:label xml:lang="en">Therapeutic_Touch_1</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/oolgu/ontologies/2023/4/dementia-ontology.owl#Vascular_Dementia">
+        <rdfs:comment>Tritt aufgrund von Problemen mit der Blutzirkulation im Gehirn auf, oft verursacht durch Schlaganfälle oder vaskuläre Probleme.</rdfs:comment>
+        <rdfs:label xml:lang="en">Vascular_Dementia</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
