@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dementia Care Assessment</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+    <div class="container mt-5">
+        <form action="{{ url_for('submit') }}" method="post">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Questions</th>
+                        <th>Checkbox Row 1</th>
+                        <th>Checkbox Row 2</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Question 1</td>
+                        <td><input type="checkbox" name="checkbox" value="Q1-R1"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q1-R2"></td>
+                    </tr>
+                    <tr>
+                        <td>Question 2</td>
+                        <td><input type="checkbox" name="checkbox" value="Q2-R1"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q2-R2"></td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+
+            <!-- Submit button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
