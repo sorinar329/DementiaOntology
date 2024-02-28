@@ -21,13 +21,13 @@
                 <tbody>
                     <tr>
                         <td>Question 1</td>
-                        <td><input type="checkbox" name="checkbox" value="Q1-R1"></td>
-                        <td><input type="checkbox" name="checkbox" value="Q1-R2"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q1-R1" class="checkbox-row"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q1-R2" class="checkbox-row"></td>
                     </tr>
                     <tr>
                         <td>Question 2</td>
-                        <td><input type="checkbox" name="checkbox" value="Q2-R1"></td>
-                        <td><input type="checkbox" name="checkbox" value="Q2-R2"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q2-R1" class="checkbox-row"></td>
+                        <td><input type="checkbox" name="checkbox" value="Q2-R2" class="checkbox-row"></td>
                     </tr>
                     <!-- Add more rows as needed -->
                 </tbody>
@@ -42,5 +42,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.min.js"></script>
 
+    <script>
+        $(document).ready(function () {
+            // Handle click events on checkboxes
+            $('.checkbox-row').click(function () {
+                // Uncheck all checkboxes in the same row
+                $(this).closest('tr').find('.checkbox-row').not(this).prop('checked', false);
+            });
+        });
+    </script>
+
 </body>
 </html>
+
+
